@@ -1,3 +1,252 @@
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One',sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+h1{
+  margin: 0px;
+  line-height: 1.5em;
+  font-size: 40px;
+  letter-spacing: -.2px;
+  color:white
+  /* text-transform: uppercase; */
+  /* text-decoration: line-through; */
+}
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+h1 strong{
+  color: #026fff;
+}
+figure{
+  margin: 0;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: #1b2127;
+  color: white;
+  height: 70px;
+}
+.logo img{
+  height: 50px;
+  vertical-align: middle;
+}
+.menu{
+  height: inherit;
+}
+.menu ul{
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.menu ul li{
+  margin: 0 50px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0px 10px;
+}
+.hero{
+  height: 300px;
+  /* background-image: url('./images/hero.jpg'); */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat;
+  background-position-x: right; */
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image{
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+}
+.project{
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding:20px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+/*   width: 500px;
+  box-sizing: border-box; */
+}
+.project-details{
+  width: 50%;
+}
+.project-imageContainer{
+  width: 500px;
+}
+.project h3{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project h6{
+margin: 10px 0;
+}
+.project p{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+.project strong{
+  font-family: 'Fjalla One',sans-serif;
+}
+.footer{
+  display: flex;
+  color: white;
+  background-color: #1b2127;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_platzi{
+  width: 80px;
+  vertical-align: middle; /*como alinea el texto con respecto a la imagen cuando se convinan elementos*/
+}
+.event-title{
+  margin-left: 20px;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  border: 1px ;
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail{
+  margin:20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event p{
+  text-align: left;
+}
+.event a{
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+}
+.contact{
+  background-color: #026fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+.social-link.twitter{
+  background-image: url(./images/twitter.svg);
+}
+.social-link.facebook{
+  background-image: url(./images/facebook.svg);
+}
+.social-link.github{
+  background-image: url(./images/github.svg);
+}
+.social-link.instagram{
+  background-image: url(./images/instagram.svg);
+}
+.form-email input{
+  border-color: grey;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  border-style: solid;
+  background-image: url('./images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button{
+  display: block;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border-style: solid white;
+  padding: 10px 0;
+  width: 100px;
+  border-radius: 5px;
+}
+.footer a{
+  color: white;
+  padding: 0 10 px;
+}
+.texto_footer{
+  margin: 15px 15px;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+/* .flexbox{
+  display: flex;
+  flex-wrap: wrap; si puede o no brincar hacia abajo wrap si permite
+  flex-direction: row; por default
+  flex-direction: column;
+}
+.box{
+  width: 20px;
+  height: 20px;
+  border: 1px red;
+
+  flex-shrink: 0; 0 nada encogible 1 100 encogible
+} */
