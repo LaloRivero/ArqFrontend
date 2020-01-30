@@ -176,7 +176,7 @@ margin: 10px 0;
 .contact{
   background-color: #026fff;
   color: white;
-  height: 150px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,12 +213,12 @@ margin: 10px 0;
 }
 .form-email button{
   display: block;
-  margin-top: 10px;
   background-color: transparent;
   color: white;
   border-style: solid white;
   padding: 10px 0;
   width: 100px;
+  margin-top: 10px;
   border-radius: 5px;
 }
 .footer a{
