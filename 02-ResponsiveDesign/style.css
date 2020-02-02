@@ -34,6 +34,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   /* align-items: center; */
   background-color: #1b2127;
   color: white;
@@ -52,10 +53,9 @@ figure{
   padding: 0;
   display: flex;
   list-style: none;
-  justify-content: space-around;
 }
 .menu ul li{
-  margin: 0 50px;
+  margin: 0 20px;
   height: inherit;
   display: flex;
   align-items: center;
@@ -78,6 +78,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-image{
   height: 300px;
@@ -97,6 +98,7 @@ figure{
   background-color: white;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 /*   width: 500px;
   box-sizing: border-box; */
 }
@@ -104,7 +106,10 @@ figure{
   width: 50%;
 }
 .project-imageContainer{
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img{
+  max-width: 100%;
 }
 .project h3{
   font-size: 30px;
@@ -129,6 +134,7 @@ margin: 10px 0;
   background-color: #1b2127;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo_platzi{
   width: 80px;
@@ -143,8 +149,8 @@ margin: 10px 0;
 }
 .event{
   border: 1px ;
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -167,6 +173,7 @@ margin: 10px 0;
   text-align: left;
 }
 .event a{
+  margin: 10px;
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -180,6 +187,7 @@ margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .social-link{
   display: inline-block;
@@ -229,7 +237,9 @@ margin: 10px 0;
   margin: 15px 15px;
 }
 .container{
-  width: 1000px;
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -237,16 +247,127 @@ margin: 10px 0;
   height: inherit;
   flex-wrap: inherit;
 }
-/* .flexbox{
-  display: flex;
-  flex-wrap: wrap; si puede o no brincar hacia abajo wrap si permite
-  flex-direction: row; por default
-  flex-direction: column;
-}
-.box{
-  width: 20px;
-  height: 20px;
-  border: 1px red;
 
-  flex-shrink: 0; 0 nada encogible 1 100 encogible
-} */
+/* desktop first que empieces desde el MQ más grande */
+
+@media screen and ( max-width: 1024px ){
+  .container{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  h1{
+    z-index: 2;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    width: 100%;
+  }
+}
+@media screen and (max-width:767px){
+  .hero{
+    height: auto;
+    position: relative;
+  }
+  h1{
+    font-size: 1.5em;
+    z-index: 2;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ul {
+    display: initial;
+  }
+  .header ul li {
+    height: 50px;
+    justify-content: center;
+  }
+  .header .logo{
+    text-align: center;
+  }
+  .project{
+    display: block;
+  }
+  .project-imageContainer{
+    width: auto;
+  }
+  .project-details{
+    width: auto;
+    font-size: 16px;
+  }
+  .project h3, h6, p, .project-description{
+    margin: .4em 0;
+  }
+  .project h3{
+    font-size: 1.5em;
+  }
+  .project h6{
+    font-size: .8em;
+  }
+  .project p{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: .8em;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:480px){
+  h1{
+    font-size: 1em;
+  }
+  .project-details{
+    font-size: 12px;
+  }
+  .event-detail{
+    margin: -2em,.5em .5em;
+    padding: 1em;
+    font-size: .8em;
+  }
+  .contact{
+    display: block;
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+@media screen and (max-width:320px){
+  h1{
+    font-size: .8em;
+  }
+  .hero{
+    padding: 2em 1em;
+  }
+}
