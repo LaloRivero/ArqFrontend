@@ -159,7 +159,17 @@
   <script>
     const burgerButton = document.querySelector('#burger-menu');
     const menu = document.querySelector('.menu');
-    burgerButton.addEventListener('click', hide_show_menu);
+    const movileWidth = window.matchMedia('screen and (max-width:767px)');
+    movileWidth.addListener(validation);
+
+    function validation(evento){
+      if(evento.matches){
+        burgerButton.addEventListener('click', hide_show_menu);
+      }else{
+        burgerButton.removeEventListener('click', hide_show_menu);
+      }
+    }
+    validation(movileWidth);
     function hide_show_menu(){
       if(menu.classList.contains('is-active')){
         menu.classList.remove('is-active');

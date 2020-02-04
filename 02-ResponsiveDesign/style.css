@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../02-ResponsiveDesign/assets/icomoon/fonts/icomoon.eot?8f0wr6');
-  src:  url('../02-ResponsiveDesign/assets/icomoon/fonts/icomoon.eot?8f0wr6#iefix') format('embedded-opentype'),
-    url('../02-ResponsiveDesign/assets/icomoon/fonts/icomoon.ttf?8f0wr6') format('truetype'),
-    url('../02-ResponsiveDesign/assets/icomoon/fonts/icomoon.woff?8f0wr6') format('woff'),
-    url('../02-ResponsiveDesign/assets/icomoon/fonts/icomoon.svg?8f0wr6#icomoon') format('svg');
+  src:  url('./fonts/icomoon.eot?8f0wr6');
+  src:  url('./fonts/icomoon.eot?8f0wr6#iefix') format('embedded-opentype'),
+/*  url('./fonts/icomoon.ttf?8f0wr6') format('truetype'),
+    url('./fonts/icomoon.woff?8f0wr6') format('woff'), */
+    url('./fonts/icomoon.ttf') format('truetype'),
+    url('./fonts/icomoon.woff') format('woff'),
+    url('./fonts/icomoon.svg?8f0wr6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +15,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -295,7 +297,7 @@ margin: 10px 0;
 }
 /* desktop first que empieces desde el MQ más grande */
 
-@media screen and ( max-width: 1024px ){
+@media screen and ( max-width: 1023px ){
   .container{
     padding: 0 1em;
   }
@@ -317,8 +319,15 @@ margin: 10px 0;
     bottom:0;
     width: 100%;
   }
+  .portfolio{
+    padding: 0;
+  }
 }
 @media screen and (max-width:767px){
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .burger-button{
     display: block;
   }
@@ -395,7 +404,7 @@ margin: 10px 0;
     font-size: 1em;
   }
   .project-description{
-    font-size: .8em;
+    font-size: 1em;
   }
   .event{
     width: auto;
@@ -437,6 +446,11 @@ margin: 10px 0;
     text-align: center;
     border: 1px solid transparent;
   }
+  .social-link{
+   width: 40px;
+   height: 40px;
+   background-size: 100%; 
+  }
 }
 @media screen and (max-width:320px){
   .menu{
@@ -448,4 +462,9 @@ margin: 10px 0;
   .hero{
     padding: 2em 1em;
   }
+  .social-link{
+    width: 35px;
+    height: 35px;
+    background-size: 100%; 
+   }
 }
