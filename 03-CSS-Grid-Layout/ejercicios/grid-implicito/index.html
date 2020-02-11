@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: [inicio] 1fr [l2] 1fr [l3] 1fr [dest1-end] 1fr [l5] 1fr [dest2-end] 1fr [l6] 1fr [final];
+      grid-template-rows: 200px [l2] 200px [fin-row];
+      grid-gap: 5px;
+      height: 100vh;
+
+      grid-auto-rows: 50px 100px;
+    }
+    .item{
+      background-color: purple;
+      color: white;
+      border: 3px solid blue;
+    }
+    .item:nth-of-type(1){
+      grid-column: inicio / dest1-end;
+      grid-row: 1 / fin-row;
+    }
+    .item:nth-of-type(2){
+      grid-column: dest1-end / dest2-end;
+      grid-row: 1 / fin-row;
+    }
+    .item:nth-of-type(3){
+      grid-column: dest2-end / final;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+    <div class="item">SOBRANTE</div>
+  </section>
+</body>
+</html>
