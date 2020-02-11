@@ -1,0 +1,66 @@
+body{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background:#f6f6f6 ;
+}
+header{
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eae9e9;
+  color: black;
+ /*  position: relative; */
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}
+.elements{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+.header__input{
+  border-radius: 5px;
+  background:#f6f6f6;
+  border: 1px solid #777777;
+  padding: 0 5px;
+  height: 30px;
+  width: 60%;
+}
+.header__profilePicture{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px; 
+}
+.header__profilePicture p{
+  width: 75%;
+  margin: 0 10px;
+}
+.header__profilePicture img{
+  height: 100%;
+  border-radius: 25px;
+}
+.header__menu{
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+}
+.headermenu__selector{
+  cursor: pointer;
+}
+.header__shadow{
+  height: 7px;
+  background: linear-gradient(rgba(0,0,0,.2),transparent);
+  /* position: absolute; */
+}
