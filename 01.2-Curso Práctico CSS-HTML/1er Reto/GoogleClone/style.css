@@ -1,0 +1,125 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 10vh;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: arial, sans-serif;
+}
+.header a {
+  margin: 0 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #1f1f1f;
+  font-size: 12px;
+}
+.header__navApps img {
+  width: 16px;
+}
+.header__navProfile img {
+  width: 35px;
+}
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 77vh;
+}
+.mainSection__img {
+  width: 300px;
+  margin-bottom: 25px;
+}
+.mainSection__inputContainer {
+  height: 28px;
+  width: 700px;
+  border: 1px solid #ececed;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.mainSection__inputContainer:hover {
+  box-shadow: 0 1px 5px 0 rgba(32, 33, 36, 0.28);
+}
+.inputContainer__input {
+  width: 90%;
+  background-color: white;
+  border: none;
+}
+.inputContainer_voice img {
+  width: 15px;
+}
+.inputContainer_voice {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+.inputContainer_search {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  width: 5%;
+}
+.inputContainer_search img {
+  align-self: center;
+  width: 18px;
+}
+.mainSection__button {
+  border: none;
+  background-color: #f2f2f2;
+  color: #737373;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 1em;
+  margin: 5px;
+}
+.mainSection__button:hover {
+  border: 1px solid #a3a3a3;
+  box-shadow: 0 1px 1px 0 rgba(32, 33, 36, 0.28);
+  color: #222;
+}
+footer {
+  position: relative;
+  bottom: 0%;
+  font-family: arial, sans-serif;
+}
+.footer_country {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e4e4e4;
+  background-color: #f2f2f2;
+}
+.footer_country p {
+  margin: 0 20px;
+  color: rgb(95, 95, 95);
+}
+.footer__secondRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e4e4e4;
+  background-color: #f2f2f2;
+}
+.footer__secondRow a {
+  margin: 0 20px;
+  color: rgb(95, 95, 95);
+}
+.footer__secondRow a:hover {
+  text-decoration: underline;
+}

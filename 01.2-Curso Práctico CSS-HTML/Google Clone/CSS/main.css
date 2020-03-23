@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: 60px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-right-section {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-right-section li a {
+  margin-right: 10px;
+  color: #000;
+}
+.nav-right-section .menu-icon {
+  background-image: url("../assets/756729-200.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+.nav-right-section img {
+  border-radius: 50px;
+  margin-left: 10px;
+}
