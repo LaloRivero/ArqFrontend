@@ -1,0 +1,222 @@
+* {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+.grid-container {
+  max-width: 980px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #47cfac;
+}
+
+header .header-icons-container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+header .icons span {
+  color: white;
+}
+.nav-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+.nav-logo-container {
+  margin-left: 50px;
+}
+.nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.profile-link a:hover {
+  color: #47cfac;
+  border-bottom: 1px #47cfac solid;
+}
+.profile-link a {
+  color: black;
+  border-bottom: 1px black solid;
+}
+.blogs-main {
+  display: grid;
+}
+.blogs-news-container {
+  width: 100%;
+  background-color: #e6e9ed;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+.blogs-news-img-container {
+  grid-column: 1;
+}
+.blogs-news-img-container img {
+  width: 85%;
+}
+.blogs-new-info-container {
+  grid-column: 2;
+}
+.blogs-news-info-container p {
+  margin-bottom: 35px;
+}
+.blogs-post-container {
+  text-align: center;
+  padding: 0 50px 40px;
+}
+.blogs-post-container h3 {
+  border-bottom: 1px solid #e6e9ed;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.blogs-button {
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.blogs-button:active {
+  background-color: #464646;
+  color: white;
+}
+.post-container {
+  display: inline-block;
+  max-width: 30%;
+  margin: 0px 10px;
+  margin-bottom: 50px;
+}
+.post-container p {
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.post-container img {
+  width: 100%;
+}
+.post-container-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #22272d;
+  border-top: 35px solid #47cfac;
+  text-align: center;
+}
+footer p {
+  color: white;
+  margin-top: 30px;
+}
+/*--------------------------------------*/
+/* BLOG STYLES */
+/*--------------------------------------*/
+
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+.blogpost-img-container img {
+  width: 100%;
+}
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #e6e9ed;
+  padding-bottom: 20px;
+}
+.blogpost-main-container article h1 {
+  font-size: 35px;
+}
+.contact-main-container {
+  width: 100%;
+  background-color: #e6e9ed;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-main-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.contact-info {
+  padding: 40px;
+}
+.contact-info img {
+  max-width: 100px;
+}
+.contact-info .contact-info-content {
+  width: 250px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.contact-info .contact-info-content a p {
+  border-bottom: 1px solid black;
+}
+.contact-info .contact-info-content a p:hover {
+  color: #47cfac;
+  border-bottom: 1px #47cfac solid;
+}
+/*--------------------------------------*/
+/* PROFILE INFO */
+/*--------------------------------------*/
+.profile-main {
+  width: 100%;
+  height: 350px;
+  background-color: #e6e9ed;
+}
+.profile-info-container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img {
+  width: 300px;
+  margin-right: 40px;
+}
+.profile-post-container h3 {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  border-bottom: 1px solid #e6e9ed;
+}
