@@ -1,0 +1,95 @@
+/* --------------------------- */
+/*          VARIABLES          */
+/* --------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --green-color: #7acc2d;
+  --black-color: #313337;
+  --shadow: 0 0 2px #a3a3a3;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  color: var(--black-color);
+}
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--green-color);
+  padding: 10px;
+}
+.brand-image img {
+  height: 100%;
+}
+.nav-options a {
+  padding: 0 10px;
+  color: var(--black-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+.nav-options a:hover {
+  color: white;
+}
+/* --------------------------- */
+/*        MAIN SECTION         */
+/* --------------------------- */
+.main-section-info h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12%;
+  text-align: center;
+}
+.main-section-content {
+  display: flex;
+  padding: 20%;
+  justify-content: center;
+  max-height: 50px;
+  background-image: url("../images/curve.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-products {
+  padding: 10px;
+  margin-top: -340px;
+  width: 300px;
+}
+.products-content {
+  padding: 15px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+.products-content h1 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.products-content p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.products-img-content {
+  text-align: center;
+}
+.products-button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.products-button:active {
+  background-color: #5e9e22;
+}
