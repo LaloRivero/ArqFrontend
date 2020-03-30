@@ -20,6 +20,9 @@ a {
   display: inline;
   color: var(--black-color);
 }
+label {
+  font-size: 12px;
+}
 header {
   height: 60px;
   display: flex;
@@ -172,6 +175,98 @@ header {
 .item-info p {
   margin: 5px;
 }
+/* --------------------------- */
+/*        PAYMENT SECTION      */
+/* --------------------------- */
+.payment-main-container {
+  height: 800px;
+}
+.payment-container-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-content-item {
+  width: 240px;
+  height: 260px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.payment-content-item h3 {
+  text-align: justify;
+  font-size: 17px;
+  font-weight: bold;
+}
+.payment-content-item p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+.payment-content-pay {
+  width: 240px;
+  height: 260px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+.payment-content-pay .pay-data {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid var(--black-color);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.payment-content-pay .products-button {
+  margin-top: 10px;
+}
+/* --------------------------- */
+/*        SUCCESS SECTION      */
+/* --------------------------- */
+.success {
+  background-color: var(--black-color);
+  width: 100vw;
+  height: 100vh;
+}
+.success-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.success-container h3,
+a {
+  color: var(--white-color);
+}
+.success-container a:hover {
+  color: var(--green-color);
+}
+.faqs {
+  margin: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.faqs-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.faqs-container h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: justify;
+  margin: 30px 0 10px 0;
+}
 footer {
   width: 100%;
   height: 60px;
@@ -184,5 +279,5 @@ footer a {
   padding: 0 10px;
   font-size: 12px;
   font-weight: 400;
-  color: white;
+  color: var(--green-color);
 }

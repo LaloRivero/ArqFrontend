@@ -34,4 +34,15 @@
   .item-content {
     margin-bottom: 20px;
   }
+  .payment-content-item {
+    max-width: 180px;
+    margin: 0;
+  }
+  .payment-content-pay {
+    max-width: 180px;
+    margin: 35px 0 0 0;
+  }
+  .payment-container-content {
+    flex-direction: column;
+  }
 }
