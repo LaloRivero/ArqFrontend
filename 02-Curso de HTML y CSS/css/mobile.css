@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+  .main-section-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: auto;
+    padding: 250px 0;
+  }
+  .main-section-info h1 {
+    width: 80%;
+    padding: 100px 0 100px;
+  }
+  .section-products {
+    margin-top: auto;
+  }
+  .products-description-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-description-content {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .main-mentions-container {
+    display: inherit;
+  }
+  .mentions-items-container {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .item-content {
+    margin-bottom: 20px;
+  }
+}

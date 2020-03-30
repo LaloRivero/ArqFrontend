@@ -132,8 +132,10 @@ header {
   text-align: center;
 }
 .main-mentions-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .mention-title-container {
   margin: 0;
