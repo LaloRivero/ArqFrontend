@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transiciones</title>
+    <style>
+      body {
+        /* padding: 0;
+        margin: 0; */
+        height: 100vh;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pelota {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: 1s;
+        position: absolute;
+      }
+      .pelota.a {
+        background-color: red;
+        left: 0;
+      }
+      .pelota.b {
+        right: 0;
+        background-color: blue;
+      }
+      .canasta {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border: 1px solid red;
+        /* transform: rotar | sesgar | poscicion | tamaño; */
+        transform: rotate(5deg) skew(10deg) translate(100px) scale(1.5);
+      }
+      .canasta:hover .pelota.a {
+        left: calc(50% - 100px);
+      }
+      .canasta:hover .pelota.b {
+        right: calc(50% - 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canasta">
+      <div class="pelota a">Hola</div>
+      <div class="pelota b">Mundo!</div>
+    </div>
+  </body>
+</html>
