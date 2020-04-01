@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones Multiples</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .cuadrado-container {
+        width: 100%;
+        border: 1px solid red;
+      }
+      .cuadrado {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7dc900;
+        position: relative;
+        /* margin: 20px; */
+        /* transition: 0.3s; */
+        animation-name: animation-cube, rebote;
+        animation-duration: 3s, 0.3s;
+        animation-iteration-count: infinite, 20;
+        animation-direction: alternate;
+        animation-timing-function: linear, ease-in-out;
+        /* animation-timing-function: cubic-bezier(0.62, -0.61, 0.4, 1.77); */
+        /* https://cubic-bezier.com/#.62,-0.61,.4,1.77 */
+        /* animation-timing-function: steps(60); */
+        /* animation-delay: 1s; */
+        /* animation-iteration-count: 2; cuantas veces quieres que se repita la animacion */
+        /* animation-timing-function: ease; que tipo de suavizado tiene la animacion */
+      }
+      @keyframes animation-cube {
+        0% {
+          /* opacity: 0; */
+          left: 0;
+        }
+        100% {
+          /* opacity: 1; */
+          left: calc(100% - 200px);
+        }
+      }
+      @keyframes rebote {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(100px) scale(1, 0.8);
+        }
+      }
+      @keyframes escalera {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(500px);
+        }
+      }
+      /* .cuadrado-container:hover .cuadrado {
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="cuadrado-container">
+      <div class="cuadrado" id="objeto">Hola Mundo!</div>
+    </div>
+    <script>
+      const $objeto = document.getElementById("objeto");
+      $objeto.addEventListener("animationend", event => {
+        console.log(event.animationName);
+        if (event.animationName === "rebote") {
+          $objeto.style.animationName = "cuadrado escalera";
+          $objeto.style.animationDuration = "3s";
+        }
+      });
+    </script>
+  </body>
+</html>

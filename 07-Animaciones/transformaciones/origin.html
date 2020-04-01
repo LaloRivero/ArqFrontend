@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transformacion Traslación</title>
+    <title>Transformacion punto de Origen</title>
     <style>
       body {
         display: flex;
@@ -14,10 +14,10 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       .cuadrado-container {
-        perspective: 300px;
+        /* perspective: 300px; */
         /* perspective-origin: center; */
         /* perspective-origin: top; */
-        perspective-origin: top left;
+        /* perspective-origin: center; */
         border: 1px solid red;
       }
       .cuadrado {
@@ -28,12 +28,8 @@
         transition: 0.3s;
       }
       .cuadrado-container:hover .cuadrado {
-        /* transform: translate(100px, 100px); */
-        /* transform: translateX(100px); */
-        /* transform: translateY(100px); */
-        /* transform: translateZ(100px); */
-        /* transform: translate3d(100px, 100px, 100px); */
-        transform: translate3d(-100px, -100px, -100px);
+        transform-origin: left top;
+        transform: rotateZ(45deg);
       }
     </style>
   </head>
